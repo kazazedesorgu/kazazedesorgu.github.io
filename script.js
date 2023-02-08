@@ -61,7 +61,7 @@ function query(name) {
       // if (checkRow(row, name)) {
       let name = capWords(row[1]);
       let dist = row[2] ? capWords(row[2]) : null;
-      let jj = (row[2] ? (row[2] + " - ") : "") + name;
+      let jj = (dist ? (dist + " - ") : "") + name;
       if (res.indexOf(jj) == -1) res.push(jj)
       // res.push(row)
 
