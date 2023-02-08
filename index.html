@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="as.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Kazazede Sorgulama</title>
+</head>
+<body class="bg-[#ffcca7] flex justify-center">
+  <div class="flex flex-col border-[1.5px] border-black bg-white rounded-2xl mt-8 mb-7 gap-2 w-[550px]">
+  <div class="flex flex-col p-5">
+    
+    <div class="text-lg mb-3">Mersin Şehir Hastanesi - Kazazede Listesi</div>
+    <div class="flex flex-row justify-around">
+
+    <input class="border-[2px] border-slate-400 rounded-md px-2" type="text" id="nameinp" size="16" maxlength="36" placeholder="İsim" onkeydown="keyDown(event)">
+    <input class="border-[2px] cursor-pointer border-slate-400 px-2 py-1 rounded-lg" type="button" id="querybtn" value="Sorgula">
+    </div>
+  </div>
+  <div class="flex flex-col border-t-[1.5px] border-black rounded-2xl px-5 py-3 bg-white">
+    
+    <div class="text-lg mb-3 text-center underline">Kazazedeler</div>
+
+    <div id="results">
+
+    <div class="text-md text-slate-400 my-2">Sonuçları görmek için aradığınız kişinin ismini yazıp sorgula butonuna basın.</div>
+    </div>
+
+    </div>
+  </div>
+  </div>    
+    
+  </div>
+  <script type="text/javascript" src="/script.js"></script>
+</body>
+</html>
